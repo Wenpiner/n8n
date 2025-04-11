@@ -60,4 +60,7 @@ RUN \
 
 ENV SHELL /bin/sh
 USER node
+
+ENV NODE_FUNCTION_ALLOW_EXTERNAL=socks5-http-client
+
 ENTRYPOINT ["tini", "--", "/docker-entrypoint.sh"]
